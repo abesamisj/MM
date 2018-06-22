@@ -325,7 +325,7 @@ a.scrolldown {
 .header-area {
     position: relative;
     /*background-image: url('../images/header-bg.jpg');*/
-    background: url('../images/header-bg.jpg') no-repeat scroll center center / cover;
+    /*background: url('../images/header-bg.jpg') no-repeat scroll center center / cover;*/
     width: 100%;
     height: 100%;
 }
@@ -1483,6 +1483,51 @@ a.scrolldown {
         -webkit-text-fill-color: transparent;
     }
 
+#jumboCarousel {
+    margin-top: 83px;
+    min-height: 300px;
+    min-width: 100%;
+
+}
+
+    #jumboCarousel img {
+        min-height: 300px;
+        min-width: 100%;
+    }
+
+    #jumboCarousel > .carousel-indicators > li {
+        border-radius: 0px;
+        min-width: 25px;
+        background-color: #9d9d9d;
+        border: 1px solid black;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #jumboCarousel > .carousel-indicators > .active {
+        background-color: lightblue;
+    }
+
+    #jumboCarousel .carousel-caption {
+        color: white;
+        right: 58%;
+        text-align: center;
+        /*max-width: 500px;*/
+        left: 10px;
+        top: 1px;
+        /*top: 50%; */
+        xtransform: translateY(-50%);
+        xbottom: initial;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+        height: 100%;
+    }
+
+.item {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
 #maps {
     width: 100%;
     height: 600px;

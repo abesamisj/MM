@@ -162,10 +162,8 @@
     <Content Include="css\animate.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\font-awesome.min.css" />
-    <Content Include="css\half-slider.css" />
     <Content Include="css\icofont.css" />
     <Content Include="css\magnific-popup.css" />
-    <Content Include="css\modern-business.css" />
     <Content Include="css\normalize.css" />
     <Content Include="css\owl.carousel.min.css" />
     <Content Include="css\responsive.css" />
@@ -180,6 +178,8 @@
     <Content Include="images\callcenter.jpg" />
     <Content Include="images\choices.jpg" />
     <Content Include="images\favicon.ico" />
+    <Content Include="images\header-bg-2.jpg" />
+    <Content Include="images\header-bg-3.jpg" />
     <Content Include="images\logo.ico" />
     <Content Include="images\logo.png" />
     <Content Include="images\office.jpg" />
