@@ -148,6 +148,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -173,10 +174,14 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\apple-touch-icon.png" />
+    <Content Include="images\blog-md-1.jpg" />
+    <Content Include="images\blog-md-3.jpg" />
+    <Content Include="images\bloglanding.jpg" />
     <Content Include="images\businesstoomuch.jpg" />
     <Content Include="images\call.jpg" />
     <Content Include="images\callcenter.jpg" />
     <Content Include="images\choices.jpg" />
+    <Content Include="images\estimates.JPG" />
     <Content Include="images\favicon.ico" />
     <Content Include="images\header-bg-2.jpg" />
     <Content Include="images\header-bg-3.jpg" />
@@ -184,6 +189,7 @@
     <Content Include="images\logo.png" />
     <Content Include="images\office.jpg" />
     <Content Include="images\question.jpg" />
+    <Content Include="images\savings.JPG" />
     <Content Include="images\service-line.jpg" />
     <Content Include="images\status.PNG" />
     <Content Include="images\strategy.PNG" />
@@ -238,6 +244,8 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Blog\Article1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
