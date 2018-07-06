@@ -183,4 +183,3 @@ C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\obj\Debug\MoneyMaking.cspr
 C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\obj\Debug\MoneyMaking.csproj.CopyComplete
 C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\obj\Debug\MoneyMaking.dll
 C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\obj\Debug\MoneyMaking.pdb
-C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\obj\Debug\MoneyMaking.csprojAssemblyReference.cache

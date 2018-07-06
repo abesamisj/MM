@@ -86,7 +86,6 @@ C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\bin\Microsoft.AI.Dependenc
 C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\bin\Microsoft.AI.Web.xml
 C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\obj\Release\MoneyMaking.csprojAssemblyReference.cache
 C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\obj\Release\MoneyMaking.csproj.CoreCompileInputs.cache
 C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\obj\Release\MoneyMaking.csproj.CopyComplete
 C:\Users\Roan\Documents\Jhigs\Projects\MM\MoneyMaking\obj\Release\MoneyMaking.dll

@@ -173,6 +173,7 @@
     <Content Include="fonts\icofont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\1week.JPG" />
     <Content Include="images\apple-touch-icon.png" />
     <Content Include="images\blog-md-1.jpg" />
     <Content Include="images\blog-md-3.jpg" />
@@ -246,6 +247,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Blog\Article1.cshtml" />
+    <Content Include="Views\Blog\Article2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

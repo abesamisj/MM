@@ -19,5 +19,11 @@ namespace MoneyMaking.Controllers
         {
             return View();
         }
+
+        // GET: Blog
+        public ActionResult Article2()
+        {
+            return View();
+        }
     }
 }
