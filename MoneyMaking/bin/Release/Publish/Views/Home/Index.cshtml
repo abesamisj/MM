@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "1 Solve Solutions - Call Center and Virtual Assistants providers";
+    ViewBag.Title = "1 Solve Solutions - Call Centre and Virtual Assistants providers";
 }
 <div class="header-area" id="home-area">
 
@@ -18,6 +18,7 @@
                         <br />
                         <h1 style="font-size:4vw; color:whitesmoke;">Enhance customer experience</h1>
                         <div class="header-text">Generate more leads and  focus on your core competencies</div>
+                        <a href="@Url.Action("Outbound", "HowItWorks")" class="bttn bttn-lg bttn-primary">View more</a>
                     </div><!-- end carousel-caption -->
                 </div><!-- end slide1 -->
                 <!-- <div class="item" id="slide2">
@@ -30,12 +31,12 @@
                 </div> end carousel-caption
                         </div>end slide2 -->
                 <div class="item" id="slide3">
-                    <img class="img-responsive" src="~/images/header-bg-3.jpg" alt="Slide 3" max-height: 80%;>
+                    <img class="img-responsive" src="~/images/freeservicetrialcard.JPG" alt="Slide 3" max-height: 80%;>
                     <div class="carousel-caption">
                         <br />
                         <h1 style="font-size:4vw; color:whitesmoke;">1 week FREE Trial</h1>
                         <div class="header-text">Try our services for 1 week at no cost no commitment basis</div>
-                        <a href="#contact-area" class="bttn bttn-lg bttn-primary">Contact Now</a>
+                        <a href="@Url.Action("Outbound", "HowItWorks")" class="bttn bttn-lg bttn-primary">Learn more</a>
                     </div><!-- end carousel-caption -->
                 </div><!-- end slide3 -->
                 <div class="item" id="slide4">
@@ -59,17 +60,28 @@
 <br />
 <br />
 <br />
+<br />
+<span>
+    <font color="red">
+        @TempData["Message"]
+    </font>
+</span>
+<br />
+<br />
 <section class="section-padding" id="home-area">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-5">
                 <div class="page-title">
-                    <h2 class="title wow fadeInUp">Call Center and Virtual Assistants providers</h2>
+                    <h2 class="title wow fadeInUp">Call Centre and Virtual Assistants providers</h2>
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
-                        @*<p>1 SOLVE SOLUTIONS will provide high quality virtual administration, customer service and call center solutions. Allowing its client to focus more on their core competencies and other strategic initiatives giving them the opportunity to reach their full business potential.</p>*@
+                        @*<p>1 SOLVE SOLUTIONS will provide high quality virtual administration, customer service and call centre solutions. Allowing its client to focus more on their core competencies and other strategic initiatives giving them the opportunity to reach their full business potential.</p>*@
                         <p>1 SOLVE SOLUTIONS will provide high-quality customer service and call centre solutions allowing our clients to focus more on their core competencies and strategic profitability initiatives.</p>
                     </div>
-
+                    <br />
+                    <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="@Url.Action("Outbound", "HowItWorks")" class="bttn bttn-lg bttn-primary">Learn more</a>
+                    </div>
                 </div>
             </div>
 
@@ -99,9 +111,9 @@
                     <div class="box-icon">
                         <i class="icofont icofont-money-bag"></i>
                     </div>
-                    <h5>Telesales - Outbound Call Center Services</h5>
+                    <h5>Telesales - Outbound Call Centre Services</h5>
                     <p>We offer the process of selling products or services over the telephone. Someone to persistently convert those leads into sales.</p>
-
+                    <a href="@Url.Action("Outbound", "HowItWorks")" class="read-more">Read More</a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
@@ -109,9 +121,9 @@
                     <div class="box-icon">
                         <i class="icofont icofont-phone-circle"></i>
                     </div>
-                    <h5>Telemarketing - Outbound Call Center Services</h5>
+                    <h5>Telemarketing - Outbound Call Centre Services</h5>
                     <p>We offer services that creates opportunities, factors customer feedback, makes appointments and leads by telephone.</p>
-
+                    <a href="@Url.Action("Outbound", "HowItWorks")" class="read-more">Read More</a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
@@ -119,9 +131,9 @@
                     <div class="box-icon">
                         <i class="icofont icofont-support"></i>
                     </div>
-                    <h5>Customer Service - Inbound Call Center Service</h5>
+                    <h5>Customer Service - Inbound Call Centre Service</h5>
                     <p>We offer services that will answer general inquiries and provide support to your customers.</p>
-
+                    <a href="@Url.Action("Inbound", "HowItWorks")" class="read-more">Read More</a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
@@ -131,7 +143,7 @@
                     </div>
                     <h5>Virtual Assistants</h5>
                     <p>We offer highly skilled virtual assistants who can be trained on specific task so you can focus more on growing your business.</p>
-
+                    <a href="@Url.Action("VirtualAssistants", "HowItWorks")" class="read-more">Read More</a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
@@ -141,7 +153,7 @@
                     </div>
                     <h5>Personal Secretary</h5>
                     <p>We offer personal administration and clerical management. Someone that will bring organization to your day-to-day activities.</p>
-
+                    <a href="@Url.Action("VirtualAssistants", "HowItWorks")" class="read-more">Read More</a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
@@ -151,14 +163,46 @@
                     </div>
                     <h5>Operational Support</h5>
                     <p>We will perform any duties that are needed for smooth business operations. Reliable, professional and friendly approach for your business</p>
-
+                    <a href="@Url.Action("VirtualAssistants", "HowItWorks")" class="read-more">Read More</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="section-padding white-bg border-bottom" id="about-area">
+    <div class="container">
+        <div class="row wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div class="page-title text-center">
+                    <h2 class="title">Our Company</h2>
+                </div>
+            </div>
 
+        </div>
+        <div class="row wow fadeInUp" data-wow-delay="0.2s">
+            <!-- About text -->
+            <div class="col-xs-12 col-md-5 col-md-push-7 col-lg-push-6 col-lg-6">
+                <p>1 SOLVE SOLUTIONS will offer call centre and virtual assistant solutions to small-medium enterprises that are looking to reduce cost, improve efficiency and minimize overhead expenses by shifting operations via outsourcing.</p>
+
+                <p>Our business development managers / co-founders are based in New Zealand (Auckland and Wellington). Which main priority is for the company to acquire new customers and sell our services. We service 20 seats capacity and we are looking to expand from our DirectTV campaign and while also doing our internal project for a health care provider.</p>
+                <p>We can proudly say that we have a fun, productive and proactive workplace which is reflected on the attitude and beliefs of our leaders. Our agents can generate results at any feasible rates the clients give us, as it is centred on encouragement and ownership of the campaigns.</p>
+
+                <p>If you want to know more give us a call and let us discuss how we can help.</p>
+                <br />
+                <a href="#contact-area" class="bttn bttn-lg bttn-primary">Contact Now</a>
+            </div>
+            <!-- End About text -->
+            <!-- Img -->
+            <div class="col-xs-12 col-md-7 col-md-pull-5 col-lg-pull-6 col-lg-6">
+                <div class="item">
+                    <img src="~/images/call.jpg" alt="">
+                </div>
+            </div>
+            <!-- End Img -->
+        </div>
+    </div>
+</section>
 <section class="section-padding">
     <div class="container">
         <div class="row">
@@ -189,7 +233,7 @@
                         <br />
                     </div>
                     <div id="our_vission" class="tab-pane fade">
-                        <h5 class="upper">To be New Zealand's No 1 call center provider </h5>
+                        <h5 class="upper">To be the No 1 call centre provider </h5>
                         <p>by providing highly optimized and capacitated organizations resilient to contemporary challenges</p>
                         <br />
                     </div>
@@ -207,7 +251,7 @@
 
 <!-- Portfolio-Area -->
 <section class="section-padding gray-bg" id="portfolio-area">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <div class="page-title text-center">
@@ -266,7 +310,7 @@
                                     <i class="icofont icofont-people"></i>
                                 </div>
                                 <span class="count_title">Philippines Operation</span>
-                                <p>Philippines is a strategic place for your outsource your call center. It has highly developed business environment and 92% of the Philippines 104 Million people are English speaking</p>
+                                <p>Philippines is a strategic place for your outsource your call centre. It has highly developed business environment and 92% of the Philippines 104 Million people are English speaking</p>
                             </div>
                         </div>
                     </div>
@@ -469,38 +513,7 @@
     </section>*@
 <!-- Portfolio-Area / -->
 <!-- About Section -->
-<section class="section-padding white-bg border-bottom" id="about-area">
-    <div class="container-fluid">
-        <div class="row wow fadeInUp" data-wow-delay="0.2s">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                <div class="page-title text-center">
-                    <h2 class="title">Our Company</h2>
-                </div>
-            </div>
 
-        </div>
-        <div class="row wow fadeInUp" data-wow-delay="0.2s">
-            <!-- About text -->
-            <div class="col-xs-12 col-md-5 col-md-push-7 col-lg-push-6 col-lg-6">
-                <p>1 SOLVE SOLUTIONS will offer call center and virtual assistant solutions to small-medium enterprises that are looking to reduce cost, improve efficiency and minimize overhead expenses by shifting operations via outsourcing.</p>
-
-                <p>Our business development managers / co-founders are based in New Zealand (Auckland and Wellington). Which main priority is for the company to acquire new customers and sell our services. We service 20 seats capacity and we are looking to expand from our DirectTV campaign and while also doing our internal project for a health care provider.</p>
-                <p>We can proudly say that we have a fun, productive and proactive workplace which is reflected on the attitude and beliefs of our leaders. Our agents can generate results at any feasible rates the clients give us, as it is centred on encouragement and ownership of the campaigns.</p>
-
-                <p>If you want to know more give us a call and let us discuss how we can help.</p>
-
-            </div>
-            <!-- End About text -->
-            <!-- Img -->
-            <div class="col-xs-12 col-md-7 col-md-pull-5 col-lg-pull-6 col-lg-6">
-                <div class="item">
-                    <img src="~/images/call.jpg" alt="">
-                </div>
-            </div>
-            <!-- End Img -->
-        </div>
-    </div>
-</section>
 <!-- End About Section -->
 <!-- Price-Area -->
 <section class="section-padding gray-bg" id="price-area">
@@ -513,57 +526,404 @@
                 </div>
             </div>
         </div>
+       
         <div class="center-block">
             <div id="monthly" class="tab-pane fade in active">
-                <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="price-box">
-                        <h4 align="center">Non-Voiced</h4>
-                        <p align="center" class="amount"><strong>From &#36;12 </strong> / <span>hour</span></p>
-                        <p align="center">1 - 5 Agents</p>
+                <div class="recipe">
+                    <div class="container">
+                        <!-- Recipe contents -->
+                        <div class="recipe-content">
+                            <!-- Recipe Name / Heading -->
+                            <h4>Voiced Services (Outbound campaigns) - $14 NZD per hour</h4>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <!-- Paragraph -->
+                                    <p>Telesales and Telemarketing</p>
+                                    <!-- Recipe Items -->
+                                    <div class="recipe-item">
+                                        <!-- Food image -->
+                                        <img class="img-responsive" src="~/images/outbound.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <!-- Recipe Items -->
+                                    <div class="recipe-item">
+                                        <!-- Heading -->
+                                        <h5>Dialler Services :-</h5>
+                                        <!-- Recipe ingredients -->
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <i class="fa fa-check"></i> Lead Generations
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Surveys
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Cold Calling
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Market Research
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Collection Reminder
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Appointment Setting
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Insurance Sales
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Selling Products and Services
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <!-- Recipe Items -->
+                                    <div class="recipe-item">
+                                        <!-- Heading -->
+                                        <h5>Why use our dialler services? :-</h5>
+                                        <!-- Recipe Description -->
+                                        <div class="recipe-description">
+                                            <!-- Paragraph -->
+                                            <p>Our experienced agents will generate interest for your products or services, while creating opportunity by providing information and factors customer's feedbacks. We will also be able to schedule appointments and produce leads by calling your client list.</p>
+                                            <!-- Paragraph -->
+                                            <p>On the other hand our experience sales agents can study your products and services and directly sell it over the phone.</p>
+                                            <p>Other kinds are: Payment Protection, Event Registration, Customer Retention, Loyalty Programs, Warranty Programs, Billing Reminders, Upselling and Cross Selling</p>
+                                            <!-- Heading -->
+                                            <h5>Businesses that will benefit from this campaign:</h5>
+                                            <!-- Recipe nutrition table -->
+                                            <div class="table-responsive">
+                                                <table class="table table-condensed table-bordered">
 
-                        <ul class="price-list">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Insurance Companies</td>
+                                                            <td>Finance Companies</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Travel and Tourism Companies</td>
+                                                            <td>Retail Companies</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>E-commerce Stores</td>
+                                                            <td>Companies With A Large and Varied Customer Base</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Defense and Security Departments</td>
+                                                            <td>Telecommunication Companies</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Multi National Companies</td>
+                                                            <td>SaaS Companies</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <!-- Recipe contents -->
+                        <div class="recipe-content">
+                            <!-- Recipe Name / Heading -->
+                            <h4>Voiced Services (Inbound campaigns) - $14 NZD per hour</h4>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <!-- Paragraph -->
+                                    <p>Customer Service and Technical Support</p>
+                                    <!-- Recipe Items -->
+                                    <div class="recipe-item">
+                                        <!-- Food image -->
+                                        <img class="img-responsive" src="~/images/classroom.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <!-- Recipe Items -->
+                                    <div class="recipe-item">
+                                        <!-- Heading -->
+                                        <h5>Receiving Calls Services :-</h5>
+                                        <!-- Recipe ingredients -->
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <i class="fa fa-check"></i> Customer Service
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Help Desk
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Technical Support
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Inbound Sales
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Telephone Answering
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Virtual Reception
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Cellphone Answering
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Overflow / After Hours
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <!-- Recipe Items -->
+                                    <div class="recipe-item">
+                                        <!-- Heading -->
+                                        <h5>Why use our receiving call services? :-</h5>
+                                        <!-- Recipe Description -->
+                                        <div class="recipe-description">
+                                            <!-- Paragraph -->
+                                            <p>Our highly skilled agents will enhance your customer's experience when answering their calls. Not only they will show expertise in your products or services but highest phone courtesy and customer service will be given to everybody.</p>
+                                            <!-- Paragraph -->
+                                            <p>Failing to answer the phone will not be a problem anymore. No more missed calls and you can be assured that somebody will always pick up the client's call.</p>
+                                            <p>Other kinds are: Medical Answering, Appointment Management, Building Maintenance, Direct Response, Disaster Response, Dispatch, Emergency Services, Hotlines, Virtual Receptionist, Order Processing.</p>
+                                            <!-- Heading -->
+                                            <h5>Businesses that will benefit from inbound services:</h5>
+                                            <!-- Recipe nutrition table -->
+                                            <div class="table-responsive">
+                                                <table class="table table-condensed table-bordered">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Clothing Brands</td>
+                                                            <td>Online Stores</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Emergency Hotlines</td>
+                                                            <td>Hospitals</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Hotels</td>
+                                                            <td>Dental Clinics</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Medical Clinic</td>
+                                                            <td>Spa and Cosmetics Clinics</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Healthcare services</td>
+                                                            <td>Catering Services</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Restaurants</td>
+                                                            <td>Tradies</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Home Services</td>
+                                                            <td>Legal</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Automotive</td>
+                                                            <td>Education</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Mortgage Companies</td>
+                                                            <td>Loans Companies</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
 
-                            <li>Virtual Assistants</li>
-                            <li>Administrative Tasks</li>
-                            <li>Clerical Tasks</li>
-                            <li>Incoming and outgoing emails</li>
-                            <li>Email and Calendar management</li>
-                            <li>Email and Chat Support</li>
-                            <li>Data Encoding</li>
-                            <li>Meeting Planner</li>
-                            <li>Website & Social Media maintenance</li>
-                            <li>Project and task management support</li>
-                            <li>Stock Control</li>
-                            <li>Employee Time Tracker</li>
-                        </ul>
-                        <br />
-                        <br />
-                        <br />
+                        <div class="recipe-content">
+                            <!-- Recipe Name / Heading -->
+                            <h4>Non-Voiced Services (Virtual Employees) - $12 NZD per hour</h4>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <!-- Paragraph -->
+                                    <p>Virtual Assistants, Personal Secretaries and Remote Employees</p>
+                                    <!-- Recipe Items -->
+                                    <div class="recipe-item">
+                                        <!-- Food image -->
+                                        <img class="img-responsive" src="~/images/workhard.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <!-- Recipe Items -->
+                                    <div class="recipe-item">
+                                        <!-- Heading -->
+                                        <h5>Everyday Tasks Services :-</h5>
+                                        <!-- Recipe ingredients -->
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <i class="fa fa-check"></i> Virtual Assistants
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Personal Secretaries
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Clerical Management
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Incoming and Outgoing Emails
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Email and Calendar Management
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Operational Support
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Email and Chat Support
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Website and Social Media Management
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <!-- Recipe Items -->
+                                    <div class="recipe-item">
+                                        <!-- Heading -->
+                                        <h5>Why use our virtual employee services? :-</h5>
+                                        <!-- Recipe Description -->
+                                        <div class="recipe-description">
+                                            <!-- Paragraph -->
+                                            <p>Our highly skilled virtual assistants will be your built-in accountability partner running your business. They are not only trained to do all those clerical and administrative work but they are also there to make sure your business goals are met.</p>
+                                            <!-- Paragraph -->
+                                            <p>If you need more help filing all those income tax returns, organize your emails, research something online, book a flight and more all of these can be handled by your VA and not only that train them any kind of responsibilities and they will be up and running at no time.</p>
+                                            <p>Other kinds are: Bookkeeping, Content Writers, Internet research, Spreadsheets, Presentations, File Management, Data Encoding, CRM & CMS Support, Getting Quotes, Transcription, Back office support</p>
+                                            <!-- Heading -->
+                                            <h5>Businesses that will benefit from virtual employee services:</h5>
+                                            <!-- Recipe nutrition table -->
+                                            <div class="table-responsive">
+                                                <table class="table table-condensed table-bordered">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Real Estate Brokers</td>
+                                                            <td>Real Estate Agents</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Property Managers</td>
+                                                            <td>Law Firms</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>IT Firms</td>
+                                                            <td>Accounting Firms</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Financial Firms</td>
+                                                            <td>Marketing Firms</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Healthcare services</td>
+                                                            <td>Authors</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Business Startups</td>
+                                                            <td>Tradies</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Home Services</td>
+                                                            <td>Business Coaches</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Home Owner Associations</td>
+                                                            <td>Community Group</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>After School Programs</td>
+                                                            <td>Doctors</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="price-box">
-                        <h4 align="center">Voiced</h4>
-                        <p align="center" class="amount">From &#36;20 /<span>hour</span></p>
-                        <p align="center">1 - 30 Agents</p>
-                        <ul class="price-list">
-                            <li>Inbound / Phone Answering Service</li>
-                            <li>Outbound Call Center Services / Telemarketing</li>
-                            <li>Virtual Assistants</li>
-                            <li>Administrative Tasks</li>
-                            <li>Clerical Tasks</li>
-                            <li>Incoming and outgoing emails</li>
-                            <li>Email and Calendar management</li>
-                            <li>Email and Chat Support</li>
-                            <li>Data Encoding</li>
-                            <li>Meeting Planner</li>
-                            <li>Website & Social Media maintenance</li>
-                            <li>Project and task management support</li>
-                            <li>Stock Control</li>
-                            <li>Employee Time Tracker</li>
-                        </ul>
+
+                @*<div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="price-box">
+                            <h4 align="center">Non-Voiced</h4>
+                            <p align="center" class="amount"><strong>From &#36;12 </strong> / <span>hour</span></p>
+                            <p align="center">1 - 5 Agents</p>
+
+                            <ul class="price-list">
+
+                                <li>Virtual Assistants</li>
+                                <li>Administrative Tasks</li>
+                                <li>Clerical Tasks</li>
+                                <li>Incoming and outgoing emails</li>
+                                <li>Email and Calendar management</li>
+                                <li>Email and Chat Support</li>
+                                <li>Data Encoding</li>
+                                <li>Meeting Planner</li>
+                                <li>Website & Social Media maintenance</li>
+                                <li>Project and task management support</li>
+                                <li>Stock Control</li>
+                                <li>Employee Time Tracker</li>
+                            </ul>
+                            <br />
+                            <br />
+                            <br />
+                        </div>
                     </div>
-                </div>
+                    <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="price-box">
+                            <h4 align="center">Voiced</h4>
+                            <p align="center" class="amount">From &#36;20 /<span>hour</span></p>
+                            <p align="center">1 - 30 Agents</p>
+                            <ul class="price-list">
+                                <li>Inbound / Phone Answering Service</li>
+                                <li>Outbound Call Centre Services / Telemarketing</li>
+                                <li>Virtual Assistants</li>
+                                <li>Administrative Tasks</li>
+                                <li>Clerical Tasks</li>
+                                <li>Incoming and outgoing emails</li>
+                                <li>Email and Calendar management</li>
+                                <li>Email and Chat Support</li>
+                                <li>Data Encoding</li>
+                                <li>Meeting Planner</li>
+                                <li>Website & Social Media maintenance</li>
+                                <li>Project and task management support</li>
+                                <li>Stock Control</li>
+                                <li>Employee Time Tracker</li>
+                            </ul>
+                        </div>
+                    </div>*@
                 @*<div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="price-box">
                             <h4>Essentials</h4>
@@ -571,7 +931,7 @@
                             <p>20 - 100 Agents</p>
                             <ul class="price-list">
                                 <li>Inbound / Phone Answering Service</li>
-                                <li>Outbound Call Center Services / Telemarketing</li>
+                                <li>Outbound Call Centre Services / Telemarketing</li>
                                 <li>Virtual Assistants</li>
                                 <li>Administrative Tasks</li>
                                 <li>Clerical Tasks</li>
@@ -594,7 +954,7 @@
                             <p>100++ Agents</p>
                             <ul class="price-list">
                                 <li>Inbound / Phone Answering Service</li>
-                                <li>Outbound Call Center Services / Telemarketing</li>
+                                <li>Outbound Call Centre Services / Telemarketing</li>
                                 <li>Virtual Assistants</li>
                                 <li>Administrative Tasks</li>
                                 <li>Clerical Tasks</li>
@@ -617,101 +977,11 @@
 </section>
 <!-- Price-Area -->
 <!-- Contact-Area -->
-<section class="section-padding" id="contact-area">
-    <div class="contact-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="page-title">
-                        <h3 class="title">Our Contact Details</h3>
-                    </div>
-                </div>
-            </div>
-            @* <a href="https://www.chrysalisconnect.co.nz/porirua/wellington-services/jhiggy-abesamis?from=badge" title="Find me on Chrysalis Connect" target="_blank"><img src="https://www.chrysalisconnect.co.nz/images/unnamed-(2).png" border=0 /></a>*@
+@{
+    Html.RenderPartial("ContactPartialView");
+}
 
-            <div class="row">
-                @*<div class="col-xs-12 col-md-8">
-                        <div class="contact-form">
-                            <form action="process.php" id="contact-form" method="post">
-                                <div class="form-double">
-                                    <input type="text" id="form-name" name="form-name" placeholder="Full Name" required="required">
-                                    <input type="number" placeholder="Phone Number">
-                                </div>
-                                <div class="form-double">
-                                    <input type="email" name="form-email" name="email" id="form-email" placeholder="Your Email" required="required">
-                                    <input type="text" name="form-subject" id="form-subject" placeholder="Subject" required="required">
-                                </div>
-                                <textarea name="form-message" id="message" id="form-message" rows="5" required="required" placeholder="Message"></textarea>
-                                <button class="bttn bttn-primary">Send Now</button>
-                            </form>
-                        </div>
-                    </div>*@
-                @*<div class="col-xs-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="contact-info">
-                        <ul class="info">*@
-                @*<li>
-                        <span class="info-icon">
-                            <i class="icofont icofont-social-google-map"></i>
-                        </span> 6 Hull Place <br /> Whitby Porirua, New Zealand 5024
-                    </li>*@
-                @*<li>
-                            <span class="info-icon">
-                                <i class="icofont icofont-ui-cell-phone"></i>
-                            </span> (+64) 210 247 06 10
-                        </li>
-                        <li>
-                            <span class="info-icon">
-                                <i class="icofont icofont-envelope"></i>
-                            </span> enquiries@1solvesolutions.co.nz
-                        </li>
-                    </ul>
-                    <div class="social-menu-2">
-                        <a href="https://www.facebook.com/1solvesolutions/?modal=admin_todo_tour" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
-                        <a href="https://www.linkedin.com/company/1solvesolutions/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
-                        <a href="https://www.instagram.com/1solvesolutions/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
-                    </div>*@
-                @*</div>
-                    </div>*@
-                @*<div class="col-xs-12 col-md-7 wow fadeInUp" data-wow-delay="0.2s">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.362139861436!2d174.89572911541768!3d-41.12661977928898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3f54553f6160cb%3A0x1737439d0f16a622!2s6+Hull+Place%2C+Whitby%2C+Porirua+5024!5e0!3m2!1sen!2snz!4v1528600809750" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>*@
+@{
+    Html.RenderPartial("Footer");
+}
 
-            </div>
-
-            <div class="row contact-info ">
-                <div class="col-xs-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
-                    <h5 class="section-heading  mr-auto text-center">Let's Get In Touch!</h5>
-                    <hr class="my-4">
-                    <p class="mb-5  mr-auto text-center">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                    <br />
-                    <div class="col-xs-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
-                        <ul class="info">
-
-                            @*<li>
-                                    <span class="info-icon">
-                                        <i class="icofont icofont-social-google-map"></i>
-                                    </span> 6 Hull Place <br /> Whitby Porirua, New Zealand 5024
-                                </li>*@
-                            <li>
-                                <span class="info-icon">
-                                    <i class="icofont icofont-ui-cell-phone"></i>
-                                </span> (+64) 210 247 06 10
-                            </li>
-                            <li>
-                                <span class="info-icon">
-                                    <i class="icofont icofont-envelope"></i>
-                                </span> <a href="mailto:enquiries@1solvesolutions.co.nz">enquiries@1solvesolutions.co.nz</a>
-                            </li>
-                        </ul>
-                        <div class="social-menu-2 ">
-                            <a href="https://www.facebook.com/1solvesolutions/?modal=admin_todo_tour" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
-                            <a href="https://www.linkedin.com/company/1solvesolutions/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
-                            <a href="https://www.instagram.com/1solvesolutions/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Contact-Area / -->

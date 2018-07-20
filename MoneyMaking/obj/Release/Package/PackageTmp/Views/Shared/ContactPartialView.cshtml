@@ -1,0 +1,108 @@
+﻿<!-- Contact-Area -->
+<section class="section-padding" id="contact-area">
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-title">
+                    <h3 class="bar-title">Contact Now</h3>
+                    <p class="mb-5  mr-auto text-center">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <div class="contact-form">
+                    <form action="@Url.Action("ContactPartialView", "Contact")" id="contactform" method="post">
+                        <div class="form-double">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required="required">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required="required">
+                        </div>
+                        <textarea id="message" name="message" rows="5" required="required" placeholder="Message"></textarea>
+                        <button id="btnShowModal" class="bttn bttn-primary">Send Now</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="contact-info">
+                    <ul class="info">
+                        <li>
+                            <span class="info-icon">
+                                <i class="icofont icofont-social-google-map"></i>
+                            </span> Whitby Porirua <br /> New Zealand 5024
+                        </li>
+                        <li>
+                            <span class="info-icon">
+                                <i class="icofont icofont-ui-cell-phone"></i>
+                            </span> (+64) 210 247 06 10
+                        </li>
+                        <li>
+                            <span class="info-icon">
+                                <i class="icofont icofont-envelope"></i>
+                            </span> enquiries@1solvesolutions.co.nz
+                        </li>
+                    </ul>
+                    <div class="social-menu-2">
+                        <a href="http://www.facebook.com/1solvesolutions/?modal=admin_todo_tour" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+                        <a href="http://www.linkedin.com/company/1solvesolutions/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+                        <a href="http://www.instagram.com/1solvesolutions/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @*<div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+
+
+                    <div class="modal fade" tabindex="-1" id="loginModal"
+                         data-keyboard="false" data-backdrop="static">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        ×
+                                    </button>
+                                    <h4 class="modal-title">Satya Login</h4>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="btnHideModal" class="btn btn-primary button button4">
+                                        OK
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>*@
+
+</section>
+<!-- Contact-Area / -->
+@*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+
+</script>
+
+<script src="~/js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#btnShowModal").click(function () {
+                $("#loginModal").modal('show');
+            });
+
+            $("#btnHideModal").click(function () {
+                $("#loginModal").modal('hide');
+            });
+        });
+</script>*@  

@@ -1,0 +1,154 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121784140-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121784140-1');
+    </script>
+
+    <meta http-equiv="content-type" content="text/html/aspx" />
+    <title>Inbound campaigns - How it works | FREE 16 hrs service trial | Voiced Services (Inbound campaigns) - $14 NZD per hour</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Jhiggy Abesamis">
+    <meta name="description" content="Customer Service | Help Desk | Technical Support | Inbound Sales | Telephone Answering | Virtual Reception | Cellphone Answering | Overflow | After Hours | Telesales | Telemarketing | Lead Generations | Surveys | Cold Calling | Market Research | Collection Reminder | Appointment Setting | Insurance Sales | Selling Products and Services" />
+
+    <meta name="keywords" content="Customer Service,  Medical Answering, Appointment Management, Building Maintenance, Direct Response, Disaster Response, Dispatch, Emergency Services, Hotlines, Virtual Receptionist, Order Processing, Help Desk, Technical Support, Inbound Sales, Telephone Answering, Virtual Reception, Cellphone Answering, Overflow, After Hours, Payment Protection, Event Registration, Customer Retention, Loyalty Programs, Warranty Programs, Billing Reminders, Up-selling and Cross Selling, Telesales ,  Telemarketing ,  Lead Generations ,  Surveys ,  Cold Calling ,  Market Research ,  Collection Reminder ,  Appointment Setting ,  Insurance Sales ,  Selling Products and Services, 1 solve solutions new zealand, 1 solve solutions nz, 1 solve solution new zealand, 1 solve solution nz, contact center, call center, virtual assistant, contact centers, call centre, call centres, call, centre, centres, centers, 1 solve solutions, 1, solve, one, solution, solutions, onesolvesolutions, 1solvesolutions, 1solvesolution, onesolvesolution, virtual, virtual employee, virtual employees, virtual call centre, virtual call centres, virtual call centers, call centre definition, call centres definition, call centers definition, call center definition">
+    <meta name="robots" content="index, follow" />
+    <meta name="DC.title" content="Business solution, outsourcing, outsourcing call centre,1 Solve Solutions - Focus on reaching your business potential - Call Center and Virtual Assistants" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" href="~/images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="~/image/ico" href="~/images/logo.ico" />
+    <!-- Plugin-CSS -->
+    @*<link href="~/css/font-awesome.min.css" rel="stylesheet" />*@
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/icofont.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link href="~/css/timeline.css" rel="stylesheet" />
+    <!-- Main-Stylesheets -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/normalize.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <script src="~/js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '224782011681451');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=224782011681451&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+</head>
+
+<html>
+<nav class="navbar mainmenu-area" data-spy="affix">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="navbar-header smoth">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" rel="home" href="#" title="Your call centre and virtual assistant solutions">
+                        <img style="max-width:300px; margin-top: -20px;" src="~/images/logo.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="mainmenu">
+                    <ul class="nav navbar-nav primary-menu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Outbound", "Outbound", "HowItWorks")</li>
+                        <li class="active">@Html.ActionLink("Inbound", "Inbound", "HowItWorks")</li>
+                        <li>@Html.ActionLink("Virtual Assistants", "VirtualAssistants", "HowItWorks")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="row">
+        @{
+            Html.RenderPartial("_HeaderInbound");
+        }
+    </div>
+    <div class="row">
+        @{
+            Html.RenderPartial("_FreeTrialOutbound");
+        }
+    </div>
+    <div class="row">
+        @{
+            Html.RenderPartial("_VoicedPriceBreakdown");
+        }
+    </div>
+
+    <div class="row">
+        @{
+            Html.RenderPartial("ContactPartialView");
+        }
+    </div>
+    <div class="row">
+        @{
+            Html.RenderPartial("Footer");
+        }
+    </div>
+</body>
+<!--Vendor-JS-->
+<script src="~/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="~/js/vendor/bootstrap.min.js"></script>
+<!--Plugin-JS-->
+<script src="~/js/owl.carousel.min.js"></script>
+<script src="~/js/appear.js"></script>
+<script src="~/js/bars.js"></script>
+<script src="~/js/waypoints.min.js"></script>
+<script src="~/js/counterup.min.js"></script>
+<script src="~/js/easypiechart.min.js"></script>
+<script src="~/js/mixitup.min.js"></script>
+<script src="~/js/contact-form.js"></script>
+<script src="~/js/scrollUp.min.js"></script>
+<script src="~/js/magnific-popup.min.js"></script>
+<script src="~/js/wow.min.js"></script>
+<!--Main-active-JS-->
+<script src="~/js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXZ3vJtdK6aKAEWBovZFe4YKj1SGo9V20&callback=initMap"></script>
+<script src="~/js/maps.js"></script>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@*@RenderSection("scripts", required: false)*@
+</html>

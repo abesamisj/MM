@@ -23,9 +23,9 @@
     <meta name="author" content="Jhiggy Abesamis">
     <meta name="description" content="Cost savings that can be used to improve profitability. How do we value cost savings? What are the real benefits of outsourcing? What are the business values?" />
 
-    <meta name="keywords" content="1 solve solutions new zealand, 1 solve solutions nz, 1 solve solution new zealand, 1 solve solution nz, contact center, call center, virtual assistant, contact centers, call centre, call centres, call, centre, centres, centers, 1 solve solutions, 1, solve, one, solution, solutions, onesolvesolutions, 1solvesolutions, 1solvesolution, onesolvesolution, virtual, virtual employee, virtual employees, virtual call centre, virtual call centres, virtual call centers, call centre definition, call centres definition, call centers definition, call center definition">
+    <meta name="keywords" content="1 solve solutions new zealand, 1 solve solutions nz, 1 solve solution new zealand, 1 solve solution nz, contact center, contact centre, call center, call centre, virtual assistant, contact centers, contact centres, call centre, call centres, call, centre, centres, centers, 1 solve solutions, 1, solve, one, solution, solutions, onesolvesolutions, 1solvesolutions, 1solvesolution, onesolvesolution, virtual, virtual employee, virtual employees, virtual call centre, virtual call centres, virtual call centers, call centre definition, call centres definition, call centers definition, call center definition">
     <meta name="robots" content="index, follow" />
-    <meta name="DC.title" content="Business solution, outsourcing, outsourcing call center,1 Solve Solutions - Focus on reaching your business potential - Call Center and Virtual Assistants" />
+    <meta name="DC.title" content="Business solution, outsourcing, outsourcing call centre,1 Solve Solutions - Focus on reaching your business potential - Call Centre and Virtual Assistants" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="apple-touch-icon" href="~/images/apple-touch-icon.png">
@@ -71,7 +71,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" rel="home" href="#" title="Your call center and virtual assistant solutions">
+                    <a class="navbar-brand" rel="home" href="#" title="Your call centre and virtual assistant solutions">
                         <img style="max-width:300px; margin-top: -20px;" src="~/images/logo.png">
                     </a>
                     @*<a class="navbar-brand" href="#home-area"><img src="~/images/logo.png" alt=""></a>*@
@@ -205,21 +205,16 @@
                     <p>Take advantage of our 1 week free trial and test our skills and capabilities. </p>
                 </div>
             </div>
-                <br />
-                <div class="row col-xs-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+            <br />
+            <div class="row col-xs-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
 
-                    <div class="fb-like" data-href="http://1solvesolutions.co.nz/Blog/Article1?Length=4" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-                </div>
-                <br />
-                <br />
-                <div class="col-xs-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="fb-like" data-href="http://1solvesolutions.co.nz/Blog/Article1?Length=4" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            </div>
+            <br />
+            <br />
+            @*<div class="col-xs-12 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
                     <ul class="info">
 
-                        @*<li>
-                    <span class="info-icon">
-                        <i class="icofont icofont-social-google-map"></i>
-                    </span> 6 Hull Place <br /> Whitby Porirua, New Zealand 5024
-                </li>*@
                         <li>
                             <span class="info-icon">
                                 <i class="icofont icofont-ui-cell-phone"></i>
@@ -228,32 +223,20 @@
                         <li>
                             <span class="info-icon">
                                 <i class="icofont icofont-envelope"></i>
-                            </span> <a href="mailto:enquiries@1solvesolutions.co.nz">enquiries@1solvesolutions.co.nz</a>
+                            </span>enquiries@1solvesolutions.co.nz
                         </li>
                     </ul>
-                </div>
-            </div>
-</section>
-
-</body>
-<hr />
-<footer class="footer-area">
-
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    <p class="copyright">
-                        Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved | 1solvesolutions.co.nz
-                    </p>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </div>
-            </div>
+                </div>*@
         </div>
-    </div>
-</footer>
+    </section>
+    <hr />
+    @{
+        Html.RenderPartial("ContactPartialView");
+    }
+</body>
+@{
+    Html.RenderPartial("Footer");
+}
 
 
 <!--Vendor-JS-->

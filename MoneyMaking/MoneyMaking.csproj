@@ -149,10 +149,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HowItWorksController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -168,12 +171,14 @@
     <Content Include="css\normalize.css" />
     <Content Include="css\owl.carousel.min.css" />
     <Content Include="css\responsive.css" />
+    <Content Include="css\timeline.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\icofont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\1week.JPG" />
+    <Content Include="images\1weekfree.JPG" />
     <Content Include="images\apple-touch-icon.png" />
     <Content Include="images\blog-md-1.jpg" />
     <Content Include="images\blog-md-3.jpg" />
@@ -182,18 +187,22 @@
     <Content Include="images\call.jpg" />
     <Content Include="images\callcenter.jpg" />
     <Content Include="images\choices.jpg" />
+    <Content Include="images\classroom.jpg" />
     <Content Include="images\estimates.JPG" />
     <Content Include="images\favicon.ico" />
+    <Content Include="images\freeservicetrialcard.JPG" />
     <Content Include="images\header-bg-2.jpg" />
     <Content Include="images\header-bg-3.jpg" />
     <Content Include="images\logo.ico" />
     <Content Include="images\logo.png" />
     <Content Include="images\office.jpg" />
+    <Content Include="images\outbound.jpg" />
     <Content Include="images\question.jpg" />
     <Content Include="images\savings.JPG" />
     <Content Include="images\service-line.jpg" />
     <Content Include="images\status.PNG" />
     <Content Include="images\strategy.PNG" />
+    <Content Include="images\workhard.jpg" />
     <Content Include="js\appear.js" />
     <Content Include="js\bars.js" />
     <Content Include="js\contact-form.js" />
@@ -220,6 +229,8 @@
     <Content Include="fonts\icofont.eot" />
     <Content Include="fonts\icofont.ttf" />
     <Content Include="fonts\icofont.woff" />
+    <Content Include="Documents\SERVICE AGREEMENT.pdf" />
+    <Content Include="Documents\T&amp;C.pdf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -248,10 +259,22 @@
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Blog\Article1.cshtml" />
     <Content Include="Views\Blog\Article2.cshtml" />
+    <Content Include="Views\Shared\ContactPartialView.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Shared\_FreeTrialOutbound.cshtml" />
+    <Content Include="Views\Shared\_VoicedPriceBreakdown.cshtml" />
+    <Content Include="Views\HowItWorks\Outbound.cshtml" />
+    <Content Include="Views\Shared\_HeaderOutbound.cshtml" />
+    <Content Include="Views\HowItWorks\Inbound.cshtml" />
+    <Content Include="Views\Shared\_HeaderInbound.cshtml" />
+    <Content Include="Views\Shared\_FreeTrialInbound.cshtml" />
+    <Content Include="Views\HowItWorks\VirtualAssistants.cshtml" />
+    <Content Include="Views\Shared\_HeaderVirtualAssistants.cshtml" />
+    <Content Include="Views\Shared\_FreeTrialVirtualAssistants.cshtml" />
+    <Content Include="Views\Shared\_NonVoicedPriceBreakdown.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
